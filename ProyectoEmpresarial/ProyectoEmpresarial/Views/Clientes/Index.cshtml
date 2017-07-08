@@ -1,0 +1,75 @@
+﻿@model IEnumerable<ProyectoEmpresarial.Models.Cliente>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cedulaJuridica)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.apellidoUno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.apellidoDos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pagina)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.residencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sector)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cedulaJuridica)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.apellidoUno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.apellidoDos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pagina)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.residencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.telefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sector)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

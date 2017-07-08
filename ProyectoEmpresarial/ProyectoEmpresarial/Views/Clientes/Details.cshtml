@@ -1,0 +1,82 @@
+﻿@model ProyectoEmpresarial.Models.Cliente
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cliente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cedulaJuridica)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cedulaJuridica)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.apellidoUno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.apellidoUno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.apellidoDos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.apellidoDos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pagina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pagina)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.residencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.residencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sector)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sector)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

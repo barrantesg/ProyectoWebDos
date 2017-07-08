@@ -29,5 +29,7 @@ namespace ProyectoEmpresarial.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<ProyectoEmpresarial.Models.Cliente> Clientes { get; set; }
     }
 }

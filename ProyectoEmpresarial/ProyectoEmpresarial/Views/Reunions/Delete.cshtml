@@ -1,0 +1,72 @@
+﻿@model ProyectoEmpresarial.Models.Reunion
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Reunion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreReunion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreReunion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.empleadoAsignado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.empleadoAsignado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.virtua)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.virtua)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cliente)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

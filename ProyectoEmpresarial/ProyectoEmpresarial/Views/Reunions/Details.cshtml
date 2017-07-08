@@ -1,0 +1,66 @@
+﻿@model ProyectoEmpresarial.Models.Reunion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Reunion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreReunion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreReunion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.empleadoAsignado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.empleadoAsignado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.virtua)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.virtua)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cliente)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

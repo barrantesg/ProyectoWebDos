@@ -193,6 +193,7 @@
     <Compile Include="Controllers\ContactoesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ReunionsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -201,6 +202,7 @@
     <Compile Include="Models\Contacto.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Reunion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -271,6 +273,11 @@
     <Content Include="Views\Contactoes\Details.cshtml" />
     <Content Include="Views\Contactoes\Edit.cshtml" />
     <Content Include="Views\Contactoes\Index.cshtml" />
+    <Content Include="Views\Reunions\Create.cshtml" />
+    <Content Include="Views\Reunions\Delete.cshtml" />
+    <Content Include="Views\Reunions\Details.cshtml" />
+    <Content Include="Views\Reunions\Edit.cshtml" />
+    <Content Include="Views\Reunions\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

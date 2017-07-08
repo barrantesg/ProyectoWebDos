@@ -194,6 +194,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ReunionsController.cs" />
+    <Compile Include="Controllers\SoportesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -203,6 +204,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Reunion.cs" />
+    <Compile Include="Models\Soporte.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -278,6 +280,11 @@
     <Content Include="Views\Reunions\Details.cshtml" />
     <Content Include="Views\Reunions\Edit.cshtml" />
     <Content Include="Views\Reunions\Index.cshtml" />
+    <Content Include="Views\Soportes\Create.cshtml" />
+    <Content Include="Views\Soportes\Delete.cshtml" />
+    <Content Include="Views\Soportes\Details.cshtml" />
+    <Content Include="Views\Soportes\Edit.cshtml" />
+    <Content Include="Views\Soportes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

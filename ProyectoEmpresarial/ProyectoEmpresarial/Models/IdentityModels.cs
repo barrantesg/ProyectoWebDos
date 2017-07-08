@@ -35,5 +35,7 @@ namespace ProyectoEmpresarial.Models
         public System.Data.Entity.DbSet<ProyectoEmpresarial.Models.Contacto> Contactoes { get; set; }
 
         public System.Data.Entity.DbSet<ProyectoEmpresarial.Models.Reunion> Reunions { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoEmpresarial.Models.Soporte> Soportes { get; set; }
     }
 }

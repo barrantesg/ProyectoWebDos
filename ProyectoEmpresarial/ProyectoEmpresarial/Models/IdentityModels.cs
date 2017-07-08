@@ -31,5 +31,7 @@ namespace ProyectoEmpresarial.Models
         }
 
         public System.Data.Entity.DbSet<ProyectoEmpresarial.Models.Cliente> Clientes { get; set; }
+
+        public System.Data.Entity.DbSet<ProyectoEmpresarial.Models.Contacto> Contactoes { get; set; }
     }
 }

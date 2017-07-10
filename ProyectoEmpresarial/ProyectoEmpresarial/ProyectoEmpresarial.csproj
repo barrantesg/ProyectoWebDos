@@ -209,12 +209,23 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-select.css" />
+    <Content Include="Content\bootstrap-select.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\img1.jpg" />
+    <Content Include="img\img10.jpg" />
+    <Content Include="img\img11.jpg" />
+    <Content Include="img\img12.jpg" />
+    <Content Include="img\img13.jpg" />
+    <Content Include="img\img3.jpg" />
+    <Content Include="img\LOGO.jpg" />
+    <Content Include="Scripts\bootstrap-select.js" />
+    <Content Include="Scripts\bootstrap-select.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -242,8 +253,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -285,6 +294,15 @@
     <Content Include="Views\Soportes\Details.cshtml" />
     <Content Include="Views\Soportes\Edit.cshtml" />
     <Content Include="Views\Soportes\Index.cshtml" />
+    <Content Include="Views\Clientes\Cliente.cshtml" />
+    <Content Include="Views\Soportes\Soporte.cshtml" />
+    <Content Include="Views\Reunions\Reunion.cshtml" />
+    <None Include="Views\Contactoes\Contacto.cshtml" />
+    <Content Include="Views\Account\PrincipalUsuario.cshtml" />
+    <Content Include="Views\Reunions\TablaReuniones.cshtml" />
+    <Content Include="Views\Contactoes\TablaContactos.cshtml" />
+    <Content Include="Views\Soportes\TablaSoporte.cshtml" />
+    <Content Include="Views\Clientes\TablaClientes.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

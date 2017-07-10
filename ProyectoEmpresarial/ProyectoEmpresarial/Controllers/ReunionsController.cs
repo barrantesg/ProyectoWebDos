@@ -14,6 +14,16 @@ namespace ProyectoEmpresarial.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
+        public ActionResult Reunion()
+        {
+            return View();
+        }
+
+        public ActionResult TablaReuniones()
+        {
+            return View();
+        }
+
         // GET: Reunions
         public ActionResult Index()
         {

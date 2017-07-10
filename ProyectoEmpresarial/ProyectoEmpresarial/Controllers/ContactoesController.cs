@@ -14,6 +14,17 @@ namespace ProyectoEmpresarial.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
+        public ActionResult Contacto()
+        {
+            return View();
+        }
+
+        public ActionResult TablaContactos()
+        {
+            return View();
+        }
+
+
         // GET: Contactoes
         public ActionResult Index()
         {

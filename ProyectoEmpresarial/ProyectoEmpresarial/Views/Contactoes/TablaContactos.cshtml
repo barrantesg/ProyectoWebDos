@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "TablaContactos";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<div>
+    <hr />
+    <i class="fa fa-plus-square-o" style="font-size:36px;"></i>
+
+    <div class="container">
+        <h2>Contactos Registrados</h2>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Primer Apellido</th>
+                    <th>Segundo Apellido</th>
+                    <th>Email</th>
+                    <th>Telefono</th>
+                    <th>Puesto</th>
+                    <th>Asociado a</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ferny</td>
+                    <td>Barrantes</td>
+                    <td>Guzmán</td>
+                    <td>fbarrantesg@gmail.com</td>
+                    <td>85842521</td>
+                    <td>Gerente</td>
+                    <td>Copelesca</td>
+                    <td><a href="Contacto">Editar - </a><a href="#" , onclick="myFunction()">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td>Ferny</td>
+                    <td>Barrantes</td>
+                    <td>Quesada</td>
+                    <td>aquesadag@gmail.com</td>
+                    <td>88920505</td>
+                    <td>Asistente Administrat</td>
+                    <td>ICE</td>
+                    <td><a href="/Contactoes/Contacto">Editar - </a><a href="#" , onclick="myFunction()">Eliminar</a></td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <script>
+function myFunction() {
+    var txt;
+    var r = confirm("Seguro que desea eliminar esta cita?");
+    if (r == true) {
+        var r = confirm("Su cita fue eliminada con exito!");
+    } else {
+
+    }
+}
+        </script>
+    </div>
+    </div>
+

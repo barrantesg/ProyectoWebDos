@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Soporte";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<div>
+    <hr />
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet">
+    <link href="Content/bootstrap-select.min.css" rel="stylesheet">
+    
+        <form>
+            <div class="form-group">
+                <label for="user">Problema:</label>
+                <input type="text" class="form-control" id="user">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Descripción:</label>
+                <input type="text" class="form-control" id="pwd">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Persona que Reporta:</label>
+                <input type="text" class="form-control" id="pwd">
+            </div>
+           
+            <div class="container">
+                <div class="dropdown">
+                    <label>Estado Actual:</label>
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <!-- Add header here -->
+                        <li><a href="#">Abierto</a></li>
+                        <li><a href="#">En Proceso</a></li>
+                        <li><a href="#">En Espera</a></li>
+                        <li><a href="#">Finalizado</a></li>
+                    </ul>
+
+                </div>
+            </div>
+                  <button type="submit" class="btn btn-default"> <a href="Principal.html">Guardar</a></button>
+</form>
+
+</div>
+

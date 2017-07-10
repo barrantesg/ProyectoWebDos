@@ -94,3 +94,5 @@ C:\Users\KRYSBELDAYANBARRANTE\Documents\WEB PROYECTO\ProyectoWebDos\ProyectoEmpr
 C:\Users\KRYSBELDAYANBARRANTE\Documents\WEB PROYECTO\ProyectoWebDos\ProyectoEmpresarial\ProyectoEmpresarial\obj\Debug\ProyectoEmpresarial.csprojResolveAssemblyReference.cache
 C:\Users\KRYSBELDAYANBARRANTE\Documents\WEB PROYECTO\ProyectoWebDos\ProyectoEmpresarial\ProyectoEmpresarial\obj\Debug\ProyectoEmpresarial.dll
 C:\Users\KRYSBELDAYANBARRANTE\Documents\WEB PROYECTO\ProyectoWebDos\ProyectoEmpresarial\ProyectoEmpresarial\obj\Debug\ProyectoEmpresarial.pdb
+C:\Users\KRYSBELDAYANBARRANTE\Documents\WEB PROYECTO\ProyectoWebDos\ProyectoEmpresarial\ProyectoEmpresarial\obj\Debug\ProyectoEmpresarial.Migrations.InitialCreate.resources
+C:\Users\KRYSBELDAYANBARRANTE\Documents\WEB PROYECTO\ProyectoWebDos\ProyectoEmpresarial\ProyectoEmpresarial\obj\Debug\ProyectoEmpresarial.csproj.GenerateResource.Cache

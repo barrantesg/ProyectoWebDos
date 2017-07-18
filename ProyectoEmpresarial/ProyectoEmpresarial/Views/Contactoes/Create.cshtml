@@ -4,13 +4,14 @@
     ViewBag.Title = "Create";
 }
 
+
 <h2>Create</h2>
 
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Contacto</h4>
         <hr />
@@ -62,27 +63,39 @@
                 @Html.ValidationMessageFor(model => model.puesto, "", new { @class = "text-danger" })
             </div>
         </div>
+       
+        @*@Html.DropDownList("Cliente_Pertenece")*@
+        @*items.Add(new SelectListItem { Text = "Educacion", Value = "Educacion" });*@
+        @* items.Add(new @Html.DropDownList("Cliente_pertenece"));*@
+        @*@Html.DropDownList("YourPropertyName", new SelectList(Model))*@
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.clientePertenece, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.clientePertenece, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.clientePertenece, "", new { @class = "text-danger" })
-            </div>
-        </div>
 
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
-        </div>
+
+        @*SelectListItem item = @Html.DropDownList("Cliente_pertenece");*@
+        @* items.Add(new SelectListItem { Text = "dato", Value = "@Html.DropDownList("Cliente_pertenece")" });*@
+        @* @Html.DropDownListFor(model => model.clientePertenece, item, "--Select--", new { htmlAttributes = new { @class = "form-control" } })*@
+                <div class="form-group">
+                   
+                    <div class="col-md-10">
+
+                        @Html.DropDownList("Cliente_Pertenece")
+                        @Html.LabelFor(model => model.clientePertenece, htmlAttributes: new { @class = "control-label col-md-2" })
+                        @Html.ValidationMessageFor(model => model.clientePertenece, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+                </div>
     </div>
-}
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
+                    } 
+          <div>
+                @Html.ActionLink("Back to List", "Index")
+            </div>
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+            @section Scripts {
+                @Scripts.Render("~/bundles/jqueryval")
+            }

@@ -14,10 +14,7 @@ namespace ProyectoEmpresarial.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        public ActionResult Reunion()
-        {
-            return View();
-        }
+     
 
         public ActionResult TablaReuniones()
         {
@@ -48,8 +45,20 @@ namespace ProyectoEmpresarial.Controllers
         // GET: Reunions/Create
         public ActionResult Create()
         {
+            int a = 0;
+            List<SelectListItem> items = new List<SelectListItem>();
+
+            foreach (var cliente in db.Clientes.ToList())
+            {
+                items.Add(new SelectListItem { Text = cliente.nombre, Value = a.ToString() });
+                a++;
+            }
+
+            ViewBag.Cliente_Pertenece = items;
+
             return View();
         }
+        
 
         // POST: Reunions/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 

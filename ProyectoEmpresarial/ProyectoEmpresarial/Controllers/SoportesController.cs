@@ -15,7 +15,7 @@ namespace ProyectoEmpresarial.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         public ActionResult Soporte()
-        {
+        {          
             return View();
         }
         public ActionResult TablaSoporte()
@@ -43,9 +43,20 @@ namespace ProyectoEmpresarial.Controllers
             return View(soporte);
         }
 
-        // GET: Soportes/Create
+        // GET: Clientes/Create //Carga los datos de la BD
         public ActionResult Create()
         {
+            int a = 0;
+            List<SelectListItem> items = new List<SelectListItem>();
+
+            foreach (var cliente in db.Clientes.ToList())
+            {
+                items.Add(new SelectListItem { Text = cliente.nombre, Value = a.ToString() });
+                a++;
+            }
+
+            ViewBag.Cliente_Pertenece = items;
+
             return View();
         }
 

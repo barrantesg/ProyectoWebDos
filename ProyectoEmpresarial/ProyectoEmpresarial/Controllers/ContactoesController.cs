@@ -15,15 +15,14 @@ namespace ProyectoEmpresarial.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         public ActionResult Contacto()
-        {
+       {
             return View();
         }
 
-        public ActionResult TablaContactos()
+            public ActionResult TablaContactos()
         {
             return View();
         }
-
 
         // GET: Contactoes
         public ActionResult Index()
@@ -49,6 +48,17 @@ namespace ProyectoEmpresarial.Controllers
         // GET: Contactoes/Create
         public ActionResult Create()
         {
+            int a = 0;
+            List<SelectListItem> items = new List<SelectListItem>();
+
+            foreach (var cliente in db.Clientes.ToList())
+            {
+                items.Add(new SelectListItem { Text = cliente.nombre, Value = a.ToString() });
+                a++;
+            }
+
+            ViewBag.Cliente_Pertenece = items;
+
             return View();
         }
 

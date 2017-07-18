@@ -14,20 +14,10 @@ namespace ProyectoEmpresarial.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        
-        public ActionResult Cliente()
-        {
-            return View();
-        }
-
-        public ActionResult TablaClientes()
-        {
-            return View();
-        }
-
         // GET: Clientes
         public ActionResult Index()
         {
+
             return View(db.Clientes.ToList());
         }
 
@@ -36,7 +26,7 @@ namespace ProyectoEmpresarial.Controllers
         {
             if (id == null)
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+               return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Cliente cliente = db.Clientes.Find(id);
             if (cliente == null)
@@ -46,18 +36,28 @@ namespace ProyectoEmpresarial.Controllers
             return View(cliente);
         }
 
-        // GET: Clientes/Create
+        // GET: Clientes/Create //Carga los datos de la BD
         public ActionResult Create()
         {
+            int a = 0;
+            List<SelectListItem> items = new List<SelectListItem>();
+
+            foreach (var cliente in db.Clientes.ToList())
+            {
+                items.Add(new SelectListItem { Text = cliente.nombre, Value = a.ToString() });
+                a++;
+            }
+      
+            ViewBag.Cliente_Pertenece = items;
+
             return View();
         }
 
         // POST: Clientes/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        //Agrega clientes a la base de datos
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,nombre,cedulaJuridica,apellidoUno,apellidoDos,pagina,residencia,telefono,sector")] Cliente cliente)
+        public ActionResult Create([Bind(Include = "id,nombre,cedulaJuridica,pagina,residencia,telefono,sector")] Cliente cliente)
         {
             if (ModelState.IsValid)
             {
@@ -89,8 +89,9 @@ namespace ProyectoEmpresarial.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,nombre,cedulaJuridica,apellidoUno,apellidoDos,pagina,residencia,telefono,sector")] Cliente cliente)
+        public ActionResult Edit([Bind(Include = "id,nombre,cedulaJuridica,pagina,residencia,telefono,sector")] Cliente cliente)
         {
+          
             if (ModelState.IsValid)
             {
                 db.Entry(cliente).State = EntityState.Modified;
@@ -134,5 +135,6 @@ namespace ProyectoEmpresarial.Controllers
             }
             base.Dispose(disposing);
         }
+      
     }
 }

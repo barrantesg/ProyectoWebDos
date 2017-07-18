@@ -247,7 +247,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -299,15 +301,7 @@
     <Content Include="Views\Soportes\Details.cshtml" />
     <Content Include="Views\Soportes\Edit.cshtml" />
     <Content Include="Views\Soportes\Index.cshtml" />
-    <Content Include="Views\Clientes\Cliente.cshtml" />
-    <Content Include="Views\Soportes\Soporte.cshtml" />
-    <Content Include="Views\Reunions\Reunion.cshtml" />
-    <None Include="Views\Contactoes\Contacto.cshtml" />
     <Content Include="Views\Account\PrincipalUsuario.cshtml" />
-    <Content Include="Views\Reunions\TablaReuniones.cshtml" />
-    <Content Include="Views\Contactoes\TablaContactos.cshtml" />
-    <Content Include="Views\Soportes\TablaSoporte.cshtml" />
-    <Content Include="Views\Clientes\TablaClientes.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
